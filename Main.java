@@ -111,7 +111,6 @@ public class Main {
         try {
             String text = (new String(Files.readAllBytes(Paths.get(textPath)))).toLowerCase();
             String[] textWords = textToWords(text);
-            System.out.println(String.join(", ", textWords));
             int commonCount = 0;
 
             FileReader vocabularyFR = new FileReader(vocabularyPath);
